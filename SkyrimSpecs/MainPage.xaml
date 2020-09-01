@@ -9,6 +9,53 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".3*"/>
+            <RowDefinition Height=".3*"/>
+            <RowDefinition Height=".3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*"/>
+            <ColumnDefinition Width=".5*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock  Grid.Row="1"
+                    FontSize="50" 
+                    HorizontalAlignment="Center" VerticalAlignment="Center"
+                    >Skyrim Spec<LineBreak/> Guide</TextBlock>
 
+        <Button Grid.Column="1"
+                Grid.Row="0"
+                HorizontalAlignment="Center" 
+                Height="150" 
+                Width="450" 
+                FontSize="50"
+                Click="Perks_Click"
+                >Perks</Button>
+        <Button Grid.Column="1"
+                Grid.Row="1"
+                HorizontalAlignment="Center" 
+                Height="150" 
+                Width="450" 
+                FontSize="50"
+                Click="Build_Click"
+                >Builds</Button>
+        <Button Grid.Column="1"
+                Grid.Row="2"
+                HorizontalAlignment="Center" 
+                Height="150" 
+                Width="450" 
+                FontSize="50"
+                Click="Guide_Click"
+                >Guides</Button>
+        <Button Grid.Column="0"
+                Grid.Row="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Height="122"
+                Width="198"
+                FontSize="40"
+                Click="Login_Click"
+                >Login</Button>
     </Grid>
 </Page>

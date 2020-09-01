@@ -26,5 +26,25 @@ namespace SkyrimSpecs
         {
             this.InitializeComponent();
         }
+
+        private void Guide_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Guides));
+        }
+
+        private void Build_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(builds));
+        }
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Login));
+        }
+
+        private void Perks_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Perks));
+        }
     }
 }
